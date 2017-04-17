@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="E2E" parallel="false" verbose="1">
+
+    <!--Browser for Test-->
+    <parameter name="browser" value="chrome"/>
+    <!--<parameter name="browser" value="phantomjs" />-->
+    <!--<parameter name="browser" value="firefox" />-->
+
+    <!--Start ULR for TESTS-->
+    <parameter name="url" value="http://www.ebay.com/"/>
+
+<!--if value is not equal mac, path for win chromedrive will be set-->
+    <parameter name="os" value="mac"/>
+    <test name="Test for Unicorn" preserve-order="true">
+        <classes>
+            <class name="com.portals.portal.desktop.E2ETest"/>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
