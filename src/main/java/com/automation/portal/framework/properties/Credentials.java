@@ -2,8 +2,8 @@ package com.automation.portal.framework.properties;
 
 public enum Credentials {
 
-    EMAIL("a.a.nikitchuk@gmail.com"),
-    PASSWORD("Sasha2388");
+    EMAIL("denisa.sufliarska@embedit.cz"),
+    PASSWORD("hcichina33");
 
     private String value;
 
