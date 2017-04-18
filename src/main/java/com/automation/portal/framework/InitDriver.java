@@ -66,6 +66,7 @@ public class InitDriver {
         return this;
     }
 
+    //TODO add support firefox driver after update to selenium 3.0
     public InitDriver fireFoxDriver() {
         setDriver(new FirefoxDriver());
         logger.info("Setting FireFoxDriver");

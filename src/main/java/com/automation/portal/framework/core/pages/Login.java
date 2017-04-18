@@ -2,7 +2,6 @@ package com.automation.portal.framework.core.pages;
 
 import com.automation.portal.framework.core.Page;
 import com.automation.portal.framework.properties.Credentials;
-import com.automation.portal.framework.properties.TestData;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

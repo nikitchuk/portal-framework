@@ -1,7 +1,6 @@
 package com.automation.portal.framework.core.pages;
 
 import com.automation.portal.framework.core.Page;
-import com.automation.portal.framework.properties.TestData;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -57,8 +56,8 @@ public class Item extends Page {
     @Step
     public boolean isMandatoryDataSelected() {
         for (WebElement element : getList(itemSelect)) {
-            if (element.getAttribute("value").equals(-1)) {
-                System.out.println(element.getAttribute("value"));
+            if (element.getAttribute("value").equals("-1")) {
+                logger.error("Mandatory field is not selected" + element.getAttribute("value"));
                 return false;
             }
         }
